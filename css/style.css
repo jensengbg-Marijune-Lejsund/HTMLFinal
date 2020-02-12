@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: "nav"
+                         "header"
+                         "main"
+                         "footer";
+  }
+
+header{
+    grid-area: header;
+    background-image: url(/images/orangedrink.jpeg);
+    background-size: cover;
+    height: 50rem;
+}
+
+header h2 {
+    font-family: 'Satisfy', cursive;
+    color: darkslategray;
+}
+
+header p{
+    color: lightgoldenrodyellow;
+    text-shadow: darkslategray 1px 1px 50px;
+}
+
+
+nav {
+    grid-area: nav;
+    background-color: lightgoldenrodyellow;
+    justify-content: space-between;
+    display: flex;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: darkslategray;
+    font-family: 'Satisfy', cursive;
+    display: inline;
+    
+}
+
+main {
+    grid-area: main;
+    height: 50rem;
+    background-image: url(/images/bottleandbarrel.jpeg);
+    background-size: cover;
+}
+
+h1 { 
+    grid-area: main;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    color: darkslategray;
+    padding-left: 100px;
+   
+}
+
+
+h2 {
+    grid-area: main;
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    padding-left: 20px;
+    color: darkslategray;
+    
+}
+
+p {
+    grid-area: main;
+    font-family: 'Raleway', sans-serif;
+    color: lightgoldenrodyellow;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 2rem;
+    text-shadow: darkslategrey 2px 2px 60px;
+}
+
+
+
+footer {
+    height: 15rem;
+    grid-area: footer;
+    background-image: url(/images/champagneglasses.jpeg);
+    background-size: cover;
+    padding-bottom: 40rem;
+}
+
+footer h2 {
+    font-family: 'Satisfy', cursive;
+    color: darkslategray;
+}
+
+footer p {
+    color:darkgoldenrod;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: lightskyblue 1px 1px 50px;
+}
+
+.only-contact-main .wrapper { 
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: "nav"
+                             "main"
+}
+      
+.only-contact-h2 {
+    font-family: 'Satisfy', cursive;
+    color: darkorange;
+    text-shadow: rgb(24, 53, 53) 1px 1px 50px;
+    font-size: xx-large;
+}
+
+.only-contact-p {
+    color: lightgoldenrodyellow;
+    text-shadow: rgb(24, 53, 53) 1px 1px 50px;
+    font-size: large;
+}
+
+.only-about-main .wrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: "nav"
+                             "main"
+}
+
+.only-contact-main {
+    grid-area: main;
+    height: 45rem;
+    background-image: url(/images/cheers.jpeg);
+    background-size: cover;
+    text-align: center;
+}
+
+
+.only-about-main {
+        grid-area: main;
+        height: 45rem;
+        background-image: url(/images/cheersmorepeople.jpeg);
+        background-size: cover;
+        text-align: center;
+        padding-bottom: 20rem;
+}
+
+.only-about-h1 {
+    font-family: 'Satisfy', cursive;
+    color: lightgoldenrodyellow;
+    text-shadow: floralwhite 1px 1px 50px;
+    padding-right: 10%;
+}
+
+.only-about-h2 {
+    font-family: 'Raleway', sans-serif;
+    color: darkorange;
+    text-shadow: rgb(24, 53, 53) 1px 1px 50px;
+    font-size: xx-large;
+}
+
+.only-about-p {
+    color: lightgoldenrodyellow;
+    text-shadow: rgb(24, 53, 53) 1px 1px 50px;
+    font-size: large;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+    main, .only-contact-main, .only-about-main {
+        height: 20rem;
+      
+    }
+    
+    footer {
+        height: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    h1 {
+        font-size: large;
+    }
+
+    .only-about-h1 {
+        font-size: large;
+        padding-right: 20%;
+    }
+
+    
+    h2 {
+        font-size: medium;
+        padding-left: 10%;
+    }
+
+    .only-about-h2, .only-contact-h2 {
+        font-size: medium;
+        padding-right: 10%;
+    }
+    
+    p, .only-contact-p, .only-about-p {
+        padding-left: 15%;
+        font-size: small;
+    }
+
+    header {
+        height: 20rem;
+    }
+
+}
